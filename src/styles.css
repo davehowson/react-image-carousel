@@ -1,0 +1,52 @@
+.App {
+  font-family: sans-serif;
+}
+
+.header {
+  text-align: center;
+}
+
+.carousel-container {
+  margin: 20px;
+}
+
+.selected-image__image {
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel__images {
+  display: flex;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.carousel__image-selected {
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
+.carousel__image {
+  margin-right: 10px;
+  height: 150px;
+  min-width: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 40%;
+}
+
+.carousel__button-left {
+  left: 10px;
+}
+
+.carousel__button-right {
+  right: 10px;
+}
