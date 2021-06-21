@@ -55,13 +55,10 @@ const ImageCarousel: React.FC<{ images?: ImageType[] }> = ({ images }) => {
   return (
     <div className="carousel-container">
       <h2 className="header">Image Carousel</h2>
-      <div className="selected-image">
-        <img
-          className="selected-image__image"
-          src={selectedImage?.url ?? ""}
-          alt="Selected"
-        />
-      </div>
+      <div
+        className="selected-image"
+        style={{ backgroundImage: `url(${selectedImage?.url})` }}
+      />
       <div className="carousel">
         <div className="carousel__images">
           {images &&
